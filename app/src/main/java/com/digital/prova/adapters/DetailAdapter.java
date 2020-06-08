@@ -29,9 +29,7 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.CustomView
     }
 
     static class CustomViewHolder extends RecyclerView.ViewHolder {
-
         public final View mView;
-
         final TextView txtId;
         final TextView tvTitle;
         private final ImageView iconImage;
@@ -39,7 +37,6 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.CustomView
         CustomViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
-
             txtId = mView.findViewById(R.id.id_category);
             tvTitle = mView.findViewById(R.id.name);
             iconImage = mView.findViewById(R.id.img_category);

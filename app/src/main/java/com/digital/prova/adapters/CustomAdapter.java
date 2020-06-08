@@ -38,7 +38,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         CustomViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
-
             txtIdCategory = mView.findViewById(R.id.id_category);
             tvName = mView.findViewById(R.id.name);
             coverImage = mView.findViewById(R.id.img_category);

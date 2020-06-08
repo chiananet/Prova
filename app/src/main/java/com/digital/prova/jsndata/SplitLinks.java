@@ -11,18 +11,13 @@ public class SplitLinks {
             urlImage = url[0].replace("preview1=", "");
             urlImage = urlImage.replace(",", "");
             urlImage = urlImage.replace("{", "");
-
+            urlImage = urlImage.replace("}", "");
+            //If Preview2 not exists
             if (urlImage.equals("")) {
                 url = img_category.split("preview1=");
                 urlImage = url[0].replace("preview2=", "");
                 urlImage = urlImage.replace(",", "");
                 urlImage = urlImage.replace("{", "");
-            } else {
-                url = img_category.split("preview2=");
-                urlImage = url[0].replace("preview1=", "");
-                urlImage = urlImage.replace(",", "");
-                urlImage = urlImage.replace("{", "");
-                urlImage = urlImage.replace("}", "");
             }
 
         }else if(jsn.equals("JsnDetail")){
@@ -30,6 +25,7 @@ public class SplitLinks {
             String[] newUrl = url[1].split("\\}");
             urlImage = newUrl[0].replace("{512x512=", "");
         }
+
         if(urlImage != null) {
             return urlImage;
         }else{
