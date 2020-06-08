@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prova</string>
+    <string name="image_category">Image_category</string>
+    <string name="textview">Textview</string>
+    <string name="image_icon">Image Icon</string>
+    <string name="ok">Ok</string>
+</resources>
